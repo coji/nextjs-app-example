@@ -28,8 +28,6 @@ export default function Home() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <EntryList />
-
             <form action={createPost} className="grid grid-cols-1 gap-4">
               <div>
                 <Label>Title</Label>
@@ -42,6 +40,8 @@ export default function Home() {
               </div>
               <Button type="submit">Create Post</Button>
             </form>
+
+            <EntryList />
           </CardContent>
         </Card>
       </main>
